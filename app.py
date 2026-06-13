@@ -98,10 +98,8 @@ def train_model(data):
         output_dir=output_dir,
         overwrite_output_dir=True,
         num_train_epochs=3,
-        per_device_train_batch_size=2,
-        save_strategy="no",
-        logging_steps=5,
-        report_to="none"
+        per_device_train_batch_size=2
+        logging_steps=5
     )
 
     trainer = Trainer(
